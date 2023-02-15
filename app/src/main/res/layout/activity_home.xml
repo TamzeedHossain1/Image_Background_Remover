@@ -4,12 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="#ffff"
+    tools:context=".Home"
+    tools:ignore="ExtraText">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="195dp"
         android:layout_height="wrap_content"
-        android:text="@string/CONTINUE"
-        />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/bg_remover"
+        android:textColor="#272727"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="216dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="687dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/ai_text"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+
+    <ImageButton
+        android:layout_width="369dp"
+        android:layout_height="83dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="779dp"
+        android:layout_marginBottom="350dp"
+        android:src="@drawable/promobn"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:layout_width="193dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/btnmain"
+        android:text="@string/remove"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
 
 </RelativeLayout>

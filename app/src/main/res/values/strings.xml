@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">Background Remover</string>
     <string name="header">header</string>
-    <string name="title">Automatically remove background in 5 seconds with one click!</string>
+    <string name="title">Automatically remove background \nin 5 seconds with one click!</string>
     <string name="CONTINUE">CONTINUE</string>
     <string name="ai_background_remover">© 2023 AI Background Remover</string>
     <string name="logo">logo</string>
+    <string name="bg_remover">BG Remover</string>
+    <string name="ai_text">AI Image Background Remover</string>
+    <string name="remove">Remove</string>
 </resources>

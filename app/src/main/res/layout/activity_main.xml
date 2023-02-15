@@ -1,72 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animationView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:lottie_fileName="gifintro.json"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
-        android:id="@+id/gif"
-        android:layout_width="305dp"
-        android:layout_height="160dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="372dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="230dp"
-        android:src="@drawable/remove"
-        android:contentDescription="@string/header" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="gifintro.json"
+            app:lottie_loop="true" />
 
-
-    <TextView
-        android:layout_width="349dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="35dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="240dp"
-        android:fontFamily="@font/roboto_medium"
-        android:gravity="center"
-        android:text="@string/title"
-        android:textColor="#6e7499"
-        android:textSize="20sp"
-        android:textStyle="normal"
-        app:autoSizeTextType="uniform"
-        tools:ignore="TextSizeCheck" />
+        <ImageView
+            android:id="@+id/gif"
+            android:layout_width="305dp"
+            android:layout_height="111dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="50dp"
+            android:contentDescription="@string/header"
+            android:src="@drawable/remove" />
 
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnmain"
-        android:layout_width="300dp"
-        android:layout_height="62dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="79dp"
-        android:background="@drawable/btnmain"
-        android:fontFamily="@font/roboto_medium"
-        android:text="@string/CONTINUE"
-        android:textColor="@color/white"
-        android:letterSpacing="0.1"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:typeface="normal"
-        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="70dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:text="@string/title"
+            android:textColor="#6e7499"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:autoSizeTextType="uniform"
+            tools:ignore="TextSizeCheck" />
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/btnmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/btnmain"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/CONTINUE"
+            android:textAllCaps="true"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
