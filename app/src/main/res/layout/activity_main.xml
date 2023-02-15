@@ -38,11 +38,11 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="35dp"
         android:layout_marginEnd="35dp"
-        android:layout_marginBottom="230dp"
+        android:layout_marginBottom="240dp"
         android:fontFamily="@font/roboto_medium"
         android:gravity="center"
         android:text="@string/title"
-        android:textColor="#000"
+        android:textColor="#6e7499"
         android:textSize="20sp"
         android:textStyle="normal"
         app:autoSizeTextType="uniform"
@@ -68,16 +68,5 @@
         android:textStyle="bold"
         android:typeface="normal"
         />
-
-    <Button
-        android:id="@+id/btn_next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="161dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="22dp" />
 
 </RelativeLayout>
