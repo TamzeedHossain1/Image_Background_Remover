@@ -16,9 +16,23 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="132dp"
         android:layout_marginEnd="132dp"
-        android:layout_marginBottom="320dp"
+        android:layout_marginBottom="420dp"
         app:srcCompat="@drawable/logo"
         android:contentDescription="@string/logo" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="wrap_content"
+        android:layout_height="233dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="0dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="line-loading.json"
+        app:lottie_loop="true" />
 
     <TextView
         android:layout_width="match_parent"
@@ -28,7 +42,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="80dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="55dp"
+        android:layout_marginBottom="65dp"
         android:gravity="center"
         android:text="@string/ai_background_remover" />
 
